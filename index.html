@@ -102,6 +102,9 @@ figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-tran
 .views figure:first-child .frame{aspect-ratio:auto;min-height:220px}
 .views figcaption{counter-increment:v;display:flex;gap:10px}
 .views figcaption::before{content:counter(v,decimal-leading-zero);color:var(--faint)}
+.views.five figure:last-child{grid-column:span 2;grid-template-rows:minmax(0,1fr) auto;align-content:stretch}
+.views.five figure:last-child .frame{aspect-ratio:auto;min-height:120px}
+@media (max-width:700px){.views.five figure:last-child{grid-column:auto}.views.five figure:last-child .frame{aspect-ratio:16/9;min-height:0}}
 @media (max-width:700px){.views{grid-template-columns:1fr 1fr}.views figure:first-child{grid-row:auto}.views figure:first-child .frame{aspect-ratio:16/9;min-height:0}}
 @media (max-width:440px){.views{grid-template-columns:1fr}.views figure:first-child{grid-column:auto}}
 
@@ -257,13 +260,13 @@ dialog button{position:fixed;top:max(16px,env(safe-area-inset-top,0px));right:va
 <section class="proj" id="fysiko">
   <aside class="side">
     <span class="no">04</span><h2>Φυσικό Αέριο · TIFF</h2>
-    <p>Τέντα για εργαστήρια στην προβλήτα, στο Φεστιβάλ Κινηματογράφου Θεσσαλονίκης. Το τελικό κάλυψε και τα πλάνα γύρω από τον χώρο.</p>
+    <p>Τέντα για εργαστήρια στην προβλήτα, στο Φεστιβάλ Κινηματογράφου Θεσσαλονίκης. Το τελικό δείχνει την τέντα σε διαφορετικές ώρες, με και χωρίς κόσμο.</p>
     <dl><dt>Πελάτης</dt><dd>Φυσικό Αέριο</dd><dt>Τύπος</dt><dd>Τέντα εργαστηρίων</dd></dl>
   </aside>
   <div class="body">
-    <div class="block"><span class="lbl">3D</span><div class="views"><figure><div class="frame"><img src="img/fys8.jpg" alt="Αξονομετρικό" loading="lazy"></div><figcaption>Αξονομετρικό</figcaption></figure><figure><div class="frame"><img src="img/fys1.jpg" alt="Πρόσοψη" loading="lazy"></div><figcaption>Πρόσοψη</figcaption></figure><figure><div class="frame"><img src="img/fys3.jpg" alt="Λεπτομέρεια · backdrop" loading="lazy"></div><figcaption>Λεπτομέρεια · backdrop</figcaption></figure></div></div>
-    <div class="block"><span class="lbl">3D → AI</span><figure><div class="cmp" style="--p:50%"><img src="img/fys16.jpg" alt="AI: Πρόσοψη"><img class="top" src="img/fys1.jpg" alt="3D render: Πρόσοψη"><div class="h"></div><span class="a">3D</span><span class="b">AI</span><input type="range" min="0" max="100" value="50" aria-label="Σύγκριση 3D και AI: Πρόσοψη"></div><figcaption class="cap">Πρόσοψη</figcaption></figure></div>
-    <div class="block"><span class="lbl">Τελικό</span><div class="finals"><figure class="big"><div class="frame"><img src="img/fys21.jpg" alt="Η τέντα το σούρουπο" loading="lazy"></div><figcaption>Η τέντα το σούρουπο</figcaption></figure><div class="row" style="--n:3"><figure><div class="frame"><img src="img/fys26.jpg" alt="Εργαστήριο" loading="lazy"></div><figcaption>Εργαστήριο</figcaption></figure><figure><div class="frame"><img src="img/fys23.jpg" alt="Λεπτομέρεια" loading="lazy"></div><figcaption>Λεπτομέρεια</figcaption></figure><figure><div class="frame"><img src="img/fys12.jpg" alt="Merch" loading="lazy"></div><figcaption>Merch</figcaption></figure></div></div></div>
+    <div class="block"><span class="lbl">3D</span><div class="views five"><figure><div class="frame"><img src="img/fys6.jpg" alt="Γωνία" loading="lazy"></div><figcaption>Γωνία</figcaption></figure><figure><div class="frame"><img src="img/fys7.jpg" alt="Πρόσοψη" loading="lazy"></div><figcaption>Πρόσοψη</figcaption></figure><figure><div class="frame"><img src="img/fys8.jpg" alt="Αξονομετρικό" loading="lazy"></div><figcaption>Αξονομετρικό</figcaption></figure><figure><div class="frame"><img src="img/fys10.jpg" alt="Χαμηλή γωνία" loading="lazy"></div><figcaption>Χαμηλή γωνία</figcaption></figure><figure><div class="frame"><img src="img/fys9.jpg" alt="Λεπτομέρεια · backdrop" loading="lazy"></div><figcaption>Λεπτομέρεια · backdrop</figcaption></figure></div></div>
+    <div class="block"><span class="lbl">3D → AI</span><figure><div class="cmp" style="--p:50%"><img src="img/fys16.jpg" alt="AI: Πρόσοψη"><img class="top" src="img/fys7.jpg" alt="3D render: Πρόσοψη"><div class="h"></div><span class="a">3D</span><span class="b">AI</span><input type="range" min="0" max="100" value="50" aria-label="Σύγκριση 3D και AI: Πρόσοψη"></div><figcaption class="cap">Πρόσοψη</figcaption></figure></div>
+    <div class="block"><span class="lbl">Τελικό</span><div class="finals"><figure class="big"><div class="frame"><img src="img/fys21.jpg" alt="Το βράδυ στην προβλήτα" loading="lazy"></div><figcaption>Το βράδυ στην προβλήτα</figcaption></figure><div class="row" style="--n:3"><figure><div class="frame"><img src="img/fys19.jpg" alt="Εργαστήριο · μέρα" loading="lazy"></div><figcaption>Εργαστήριο · μέρα</figcaption></figure><figure><div class="frame"><img src="img/fys20.jpg" alt="Σούρουπο" loading="lazy"></div><figcaption>Σούρουπο</figcaption></figure><figure><div class="frame"><img src="img/fys22.jpg" alt="Μπλε ώρα" loading="lazy"></div><figcaption>Μπλε ώρα</figcaption></figure></div><div class="row" style="--n:3"><figure><div class="frame"><img src="img/fys15.jpg" alt="Γωνία" loading="lazy"></div><figcaption>Γωνία</figcaption></figure><figure><div class="frame"><img src="img/fys17.jpg" alt="Πρόσοψη" loading="lazy"></div><figcaption>Πρόσοψη</figcaption></figure><figure><div class="frame"><img src="img/fys18.jpg" alt="Αξονομετρικό" loading="lazy"></div><figcaption>Αξονομετρικό</figcaption></figure></div></div></div>
   </div>
 </section>
 
